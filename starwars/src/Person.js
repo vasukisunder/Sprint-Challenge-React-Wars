@@ -21,6 +21,7 @@ const Title = styled(CardTitle)
 font-size: 20px;
 text-transform: uppercase;
 font-weight: bold;
+letter-spacing: 1.2px;
 `
 
 
@@ -36,7 +37,7 @@ export default function Person(props) {
                     <StyledCard>
                     <Title>{props.name}</Title>
                             <CardSubtitle style= {{fontSize: '12px', paddingBottom: '3%'}}>{props.gender}, {props.year}</CardSubtitle>
-                            <Badge color="info" onClick={toggle} size="sm">Info</Badge>
+                            <Badge style={{marginBottom: '3%'}} color="info" onClick={toggle} size="sm">Info</Badge>
                             <Collapse isOpen={isOpen}>
                             
                         <CardBody>
